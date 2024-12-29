@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>龙蛋传说</title>
+    <title>兴安盟</title>
     <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,300i,400,400i,700i" rel="stylesheet">
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.4.4/jquery.min.js"></script>
@@ -193,7 +193,31 @@
             var loaded = 0;
             var totalImages = 20; // 设置图片总数
 
-            // 动态创建图片元素
+            // 上传链接数组，替换为你实际的图片链接
+            var imageUrls = [
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/1封面.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/2版权页.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/3扉页.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/4角色.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/5.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/6.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/7.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/8.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/9.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/10.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/11.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/12.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/13.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/14.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/15.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/16.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/17.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/18.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/19.png',
+                'http://8.130.95.9:9999/pic/home/bl/img/U1/20封底结尾.png'
+            ];
+
+             // 动态创建图片元素
             var bLoad = $('.b-load');
             for (var i = 1; i <= totalImages; i++) {
                 var img = $('<img src="images/' + i + '.jpg" alt="" />');
